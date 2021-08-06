@@ -14,5 +14,8 @@
 
 .main h2{
     text-align: center;
-    font-size: 34px;
+    font-size: 44px;
+    color: #2b8bab;
+    text-shadow: 0 0 0.2em #68c852, 0 0 0.2em #68c852
+    ;
 }
