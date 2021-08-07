@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="app.js">
     <title>Rick and Morty</title>
 </head>
 
@@ -23,26 +23,7 @@
     </div>
     <!--main-->
 
-    <script>
-        fetch('https://rickandmortyapi.com/api/character')
-            .then(response => response.json())
-            .then(function (json) {
-
-                var bxs = document.querySelector('.bxs');
-
-                json.results.map((results) => {
-
-                    bxs.innerHTML += `
-                    <div class="bx">
-                        <img src = `+results.image+`>
-                        <p>`+results.name+`</p>
-                        <p>specie: `+results.species+`</p>
-                    </div>
-                `;
-                })
-
-            })
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
